@@ -2,17 +2,17 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Outra tela do nosso APP</ion-title>
+        <ion-title>Nova TAB</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Outra tela do nosso APP</ion-title>
+          <ion-title size="large">Nova TAB</ion-title>
         </ion-toolbar>
       </ion-header>
-      
-      <ExploreContainer name="Outra tela do nosso APP page" />
+    
+      <ExploreContainer name="Isso aqui funciona bem!" />
     </ion-content>
   </ion-page>
 </template>
@@ -22,8 +22,8 @@ import { defineComponent } from 'vue';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
 
-export default defineComponent({
-  name: 'Tab2Page',
+export default  defineComponent({
+  name: 'Tab1Page',
   components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
 });
 </script>
