@@ -31,13 +31,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { actionSheetController, IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { actionSheetController, IonFab, IonFabButton, IonIcon, IonGrid, IonRow, IonCol, IonImg, IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import { camera, trash, close } from 'ionicons/icons';
 import { usePhotoGallery, UserPhoto } from '@/composable/usePhotoGallery';
 
 export default defineComponent({
   name: 'Tab1Page',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+  components: { IonFab, IonFabButton, IonIcon, IonGrid, IonRow, IonCol, IonImg, IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
 
   setup() {
     const showActionSheet = async (photo: UserPhoto) => {
